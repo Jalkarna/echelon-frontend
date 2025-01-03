@@ -1,0 +1,129 @@
+.three-d-model-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Positioned to the right */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.dev-menu {
+  position: absolute;
+  top: 50px;
+  right: 10px; /* Positioned to the right */
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px; /* Adjusted padding */
+  border-radius: 8px; /* Adjusted border radius */
+  z-index: 10;
+  color: #fff;
+  width: 180px; /* Reduced from 220px */
+  max-height: 300px; /* Reduced from 400px */
+  overflow-y: auto; /* Adds scrollbar */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dev-menu h3 {
+  margin: 0 0 8px 0; /* Reduced margin */
+  font-size: 1rem; /* Smaller font */
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 6px; /* Reduced padding */
+}
+
+.dev-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dev-menu li {
+  margin-bottom: 6px;
+}
+
+.dev-menu button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 10px; /* Smaller padding */
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+.dev-menu .close-menu {
+  background: #ff4d4d;
+  margin-top: 10px;
+}
+
+.animation-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.animation-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(2px);
+}
+
+.animation-button.active {
+  background: rgba(59, 130, 246, 0.5);
+  border-left: 3px solid #3b82f6;
+  font-weight: 500;
+}
+
+.close-menu {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.close-menu:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+/* Scrollbar styling */
+.dev-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dev-menu::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.dev-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.dev-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
